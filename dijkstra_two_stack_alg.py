@@ -1,5 +1,5 @@
 operation_string = input()
-operation_string = str(operation_string).strip() # removes any whitespace from the input
+operation_string = str(operation_string).strip() # removes any whitespaces from the input
 
 def two_stack_algorithm(string):
 
@@ -8,14 +8,14 @@ def two_stack_algorithm(string):
 
     for char in operation_string:
 
-        if char == "(": # ignores left paranthesis
+        if char == "(": # ignores left parenthesis
             pass
         else:
             try:
                 char = int(char)
                 values.append(char) # integers into the values list
             except:
-                if char == ")": # right parantheses initiate operation
+                if char == ")": # right parentheses initiate operation
 
                     first_value = values.pop()
                     second_value = values.pop()
